@@ -1,0 +1,37 @@
+<script>
+numero = -1
+respuesta = 0
+intentos = 0
+while(numero != respuesta){
+  numero = Math.ceil(Math.random()*5);
+  respuesta = parseInt(prompt('un numero de 1 a 5. Llevas ' + intentos + ' intentos'))
+  if(numero == respuesta){
+	alert('adivinaste');
+  }else{
+	alert('era: ' + numero);
+  }
+  intentos=intentos+1
+}
+
+
+/*
+A = 1
+alert(" hola " + " SOY " + A + " y estoy " + "programando")
+
+A = A + 1
+A = A + 1
+alert(" hola " + " SOY " + A + " y estoy " + "programando")
+
+while(A < 200){
+	A = A * 2
+	alert(" hola " + " SOY " + A + " y estoy " + "programando")
+}
+while(A > 1){
+	A = A / 2
+	alert(" hola " + " SOY " + A + " y estoy " + "programando")
+}
+
+*/
+
+</script>
+

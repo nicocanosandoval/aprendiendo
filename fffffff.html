@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><body>
+<button onclick="mensaje()">tocame</button>
+<button onclick="mensaje2()">instrucsiones </button>
+<script>
+function mensaje(){
+   let p1 = confirm("hola, saltarias?si/no");
+   if(p1){
+             alert("te caiste por el acantilado");
+             return;
+   }
+   let p2 = confirm ("agitarias tus manos?");
+   if(p2){
+             alert("puedes volar");
+   } else { 
+             alert("te quedaste aburrido");
+   }                 
+
+}
+function mensaje2(){
+  alert("instrucsiones:tienes que adivinar si tienes que undir cancelar o aceptar") 
+}
+
+</script>
+
+</body></html>
+

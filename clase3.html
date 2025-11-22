@@ -1,0 +1,32 @@
+<div>¡Hola, soy una cajita!</div>
+
+
+<div style="background: #6a60ff;">¡Hola, soy una cajita!</div>
+
+
+<script>
+  let cajita = document.createElement('div');
+  cajita.textContent = '¡Soy una cajita mágica!';
+  document.body.appendChild(cajita);
+</script>
+
+
+
+
+<style>
+  div {
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+</style>
+
+
+<script>
+for (let i = 0; i < 10; i++) {
+  let cajita = document.createElement('div');
+  cajita.textContent = Math.random();
+  document.body.appendChild(cajita);
+}
+</script>

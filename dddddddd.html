@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><body>
+<button onclick="mensaje()">jugar</button>
+<script>
+function promptRapidoOLento(){
+    let p1 = prompt("correrias rapido o lento?")
+    if(p1 != 'rapido' && p1 != 'lento'){
+	alert('Solo se puede rapido o lento');
+	return promptRapidoOLento();
+    }
+    return p1;
+}
+
+function mensaje(){
+   let p1 = promptRapidoOLento();
+   if(p1=='rapido'){
+         alert("ganaste")
+   }else{
+   alert("perdiste")
